@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries App</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+      integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b4e0f9128b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/dark.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="title">Where in the world?</div>
+      <div class="mode-select">
+        <i class="fas fa-moon mode-icon"></i>
+        <p>Dark mode</p>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main">
+      <div class="search-filter">
+        <input
+          type="text"
+          class="search"
+          placeholder="Search for a country..."
+        />
+        <i class="fas fa-search search-icon"></i>
+
+        <div class="filter">
+          <div class="filter-tab">
+            Filter by Region
+            <i class="fas fa-chevron-down filter-icon"></i>
+          </div>
+          <ul class="filter-options hidden">
+            <li class="filter-option">Africa</li>
+            <li class="filter-option">Americas</li>
+            <li class="filter-option">Asia</li>
+            <li class="filter-option">Europe</li>
+            <li class="filter-option">Oceania</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="countries"></div>
+
+      <div class="page-buttons"></div>
+    </main>
+
+    <section class="detail hidden">
+      <div class="container">
+        <button class="back-button">
+          <i class="fas fa-arrow-left"></i>
+          Back
+        </button>
+
+        <div class="country-detail"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
